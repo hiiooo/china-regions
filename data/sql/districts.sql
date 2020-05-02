@@ -7,8 +7,8 @@
 #
 #
 
-DROP TABLE IF EXISTS districts;
-CREATE TABLE districts (
+DROP TABLE IF EXISTS district;
+CREATE TABLE district (
 	id		int NOT NULL AUTO_INCREMENT,
 	code	varchar(8) NOT NULL,
 	name	varchar(24) NOT NULL,
@@ -16,9 +16,9 @@ CREATE TABLE districts (
 	PRIMARY KEY (`id`)
 );
 
-LOCK TABLES districts WRITE;
+LOCK TABLES district WRITE;
 
-INSERT INTO districts (code, name, city_code)
+INSERT INTO district (code, name, city_code)
 VALUES
 	('110101','东城区','110100'),
 	('110102','西城区','110100'),

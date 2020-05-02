@@ -7,8 +7,8 @@
 #
 #
 
-DROP TABLE IF EXISTS cities;
-CREATE TABLE cities (
+DROP TABLE IF EXISTS city;
+CREATE TABLE city (
 	id		int NOT NULL AUTO_INCREMENT,
 	code	varchar(8) NOT NULL,
 	name	varchar(24) NOT NULL,
@@ -16,9 +16,9 @@ CREATE TABLE cities (
 	PRIMARY KEY (`id`)
 );
 
-LOCK TABLES cities WRITE;
+LOCK TABLES city WRITE;
 
-INSERT INTO cities (code, name, province_code)
+INSERT INTO city (code, name, province_code)
 VALUES
 	('110100','北京市','110000'),
 	('120100','天津市','120000'),

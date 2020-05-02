@@ -7,17 +7,17 @@
 #
 #
 
-DROP TABLE IF EXISTS provinces;
-CREATE TABLE provinces (
+DROP TABLE IF EXISTS province;
+CREATE TABLE province (
 	id		int NOT NULL AUTO_INCREMENT,
 	code	varchar(8) NOT NULL,
 	name	varchar(24) NOT NULL,
 	PRIMARY KEY (`id`)
 );
 
-LOCK TABLES provinces WRITE;
+LOCK TABLES province WRITE;
 
-INSERT INTO provinces (code, name)
+INSERT INTO province (code, name)
 VALUES
 	('110000','北京市'),
 	('120000','天津市'),
